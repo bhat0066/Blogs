@@ -1,0 +1,19 @@
+C:\Users\jines\Desktop\Assignment 1\Assignment1\Assignment1\bin\Debug\netcoreapp2.0\Assignment1.deps.json
+C:\Users\jines\Desktop\Assignment 1\Assignment1\Assignment1\bin\Debug\netcoreapp2.0\Assignment1.runtimeconfig.json
+C:\Users\jines\Desktop\Assignment 1\Assignment1\Assignment1\bin\Debug\netcoreapp2.0\Assignment1.runtimeconfig.dev.json
+C:\Users\jines\Desktop\Assignment 1\Assignment1\Assignment1\bin\Debug\netcoreapp2.0\Assignment1.dll
+C:\Users\jines\Desktop\Assignment 1\Assignment1\Assignment1\obj\Debug\netcoreapp2.0\Assignment1.csprojResolveAssemblyReference.cache
+C:\Users\jines\Desktop\Assignment 1\Assignment1\Assignment1\obj\Debug\netcoreapp2.0\Assignment1.csproj.CoreCompileInputs.cache
+C:\Users\jines\Desktop\Assignment 1\Assignment1\Assignment1\obj\Debug\netcoreapp2.0\Assignment1.AssemblyInfoInputs.cache
+C:\Users\jines\Desktop\Assignment 1\Assignment1\Assignment1\obj\Debug\netcoreapp2.0\Assignment1.AssemblyInfo.cs
+C:\Users\jines\Google Drive\Winter 2018\NET\Assignments\Assignment 1\Assignment1\Assignment1\bin\Debug\netcoreapp2.0\Assignment1.deps.json
+C:\Users\jines\Google Drive\Winter 2018\NET\Assignments\Assignment 1\Assignment1\Assignment1\bin\Debug\netcoreapp2.0\Assignment1.runtimeconfig.json
+C:\Users\jines\Google Drive\Winter 2018\NET\Assignments\Assignment 1\Assignment1\Assignment1\bin\Debug\netcoreapp2.0\Assignment1.runtimeconfig.dev.json
+C:\Users\jines\Google Drive\Winter 2018\NET\Assignments\Assignment 1\Assignment1\Assignment1\bin\Debug\netcoreapp2.0\Assignment1.dll
+C:\Users\jines\Google Drive\Winter 2018\NET\Assignments\Assignment 1\Assignment1\Assignment1\bin\Debug\netcoreapp2.0\Assignment1.pdb
+C:\Users\jines\Google Drive\Winter 2018\NET\Assignments\Assignment 1\Assignment1\Assignment1\obj\Debug\netcoreapp2.0\Assignment1.csprojResolveAssemblyReference.cache
+C:\Users\jines\Google Drive\Winter 2018\NET\Assignments\Assignment 1\Assignment1\Assignment1\obj\Debug\netcoreapp2.0\Assignment1.csproj.CoreCompileInputs.cache
+C:\Users\jines\Google Drive\Winter 2018\NET\Assignments\Assignment 1\Assignment1\Assignment1\obj\Debug\netcoreapp2.0\Assignment1.AssemblyInfoInputs.cache
+C:\Users\jines\Google Drive\Winter 2018\NET\Assignments\Assignment 1\Assignment1\Assignment1\obj\Debug\netcoreapp2.0\Assignment1.AssemblyInfo.cs
+C:\Users\jines\Google Drive\Winter 2018\NET\Assignments\Assignment 1\Assignment1\Assignment1\obj\Debug\netcoreapp2.0\Assignment1.dll
+C:\Users\jines\Google Drive\Winter 2018\NET\Assignments\Assignment 1\Assignment1\Assignment1\obj\Debug\netcoreapp2.0\Assignment1.pdb

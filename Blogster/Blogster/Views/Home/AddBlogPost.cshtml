@@ -1,0 +1,34 @@
+﻿@using Microsoft.AspNetCore.Http;
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Add a blog";
+}
+
+<div class="container" role="main">
+    &nbsp;
+    <form asp-controller="Home" asp-action="CreateBlogPost" asp-route-UserId="@Context.Session.GetInt32("UserId")" method="post">
+        <div class="form-group">
+            <label for="Title">Title</label>
+            <input type="text" class="form-control" id="Title" name="Title" maxlength="200" required>
+        </div>
+
+        <div class="form-group">
+            <label for="ShortDescription">Short Description</label>
+            <input type="text" class="form-control" id="ShortDescription" name="ShortDescription" maxlength="400" required>
+        </div>
+
+        <div class="form-group">
+            <label for="Content">Content</label>
+            <textarea class="form-control" id="Content" name="Content" rows="10" minlength="100" maxlength="4000" required></textarea>
+        </div>
+
+        <div class="checkbox-group">
+            <input name="IsAvailable" data-toggle="toggle" type="checkbox" value="1">
+            Publish Blog
+        </div>
+
+        <button class="btn btn-outline-primary btn-sm" type="submit">Add Blog</button>
+    </form>
+</div>
+
+

@@ -1,0 +1,95 @@
+﻿@model Blogster.Models.BlogViewModel
+@using Microsoft.AspNetCore.Http;
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Blogs";
+}
+
+<div class="container">
+
+
+    <!-- Post Content Column -->
+    <div class="col-lg-8">
+
+        <!-- Title -->
+        <h3 class="mt-4">@Model.Blogs.Title</h3>
+
+        <!-- Author -->
+        <p class="lead">
+            by
+            <a href="#"> @Model.User.FirstName  @Model.User.LastName @Model.User.EmailAddress</a>
+        </p>
+
+        <hr>
+
+        <!-- Date/Time -->
+        <p>
+            Posted on @Model.Blogs.Posted
+        </p>
+
+        <hr>
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+
+                    @foreach (var items in Model.Photo)
+                    {
+                        <img class="d-block w-100" src="@items.Url" alt="">
+                    }
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Post Content -->
+
+        <p>
+            @Model.Blogs.Content
+        </p>
+
+        <hr>
+
+        @if (@Context.Session.GetString("FirstName") != null && @Context.Session.GetString("LastName") != null)
+        {
+            <!-- Comments Form -->
+            <div class="card my-4">
+                <h5 class="card-header">Leave a Comment:</h5>
+                <div class="card-body">
+                    <form asp-controller="Home" asp-action="CreateComment" asp-route-UserId="@Context.Session.GetInt32("UserId")" asp-route-BlogPostID="@Model.Blogs.BlogPostID" method="post" asp->
+                        <div class="form-group">
+                            <textarea class="form-control" name="Content" rows="3" maxlength="2048" required></textarea>
+                        </div>
+                        <div class="form-group">
+                           Ratings: <input  range="The field Rating must be between 1 and 5." max="5" min="1" data-val-required="The Rating field is required." name="Rating" type="number">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        }
+
+        @foreach (var userComment in Model.Comments)
+        {
+            <!-- Single Comment -->
+            <div class="media mb-4">
+                <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+                <div class="media-body">
+                    @foreach (var userInfo in Model.user)
+                    {
+                        @if (userInfo.UserId == userComment.UserId)
+                        {
+                            <h5 class="mt-0">
+                                @userInfo.FirstName @userInfo.LastName
+                                -  Ratings: @userComment.Rating/5
+                            </h5>
+                            break;
+                        }
+                    }
+                    @userComment.Content
+                </div>
+            </div>
+        }
+    </div>
+</div>

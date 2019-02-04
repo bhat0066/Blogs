@@ -1,0 +1,11 @@
+C:\Users\jines\Desktop\DemoApplication\Blogster\Blogster\obj\Debug\netcoreapp2.0\Blogster.csprojAssemblyReference.cache
+C:\Users\jines\Desktop\DemoApplication\Blogster\Blogster\obj\Debug\netcoreapp2.0\Blogster.csproj.CoreCompileInputs.cache
+C:\Users\jines\Desktop\DemoApplication\Blogster\Blogster\obj\Debug\netcoreapp2.0\Blogster.AssemblyInfoInputs.cache
+C:\Users\jines\Desktop\DemoApplication\Blogster\Blogster\obj\Debug\netcoreapp2.0\Blogster.AssemblyInfo.cs
+C:\Users\jines\Desktop\DemoApplication\Blogster\Blogster\bin\Debug\netcoreapp2.0\Blogster.deps.json
+C:\Users\jines\Desktop\DemoApplication\Blogster\Blogster\bin\Debug\netcoreapp2.0\Blogster.runtimeconfig.json
+C:\Users\jines\Desktop\DemoApplication\Blogster\Blogster\bin\Debug\netcoreapp2.0\Blogster.runtimeconfig.dev.json
+C:\Users\jines\Desktop\DemoApplication\Blogster\Blogster\bin\Debug\netcoreapp2.0\Blogster.dll
+C:\Users\jines\Desktop\DemoApplication\Blogster\Blogster\bin\Debug\netcoreapp2.0\Blogster.pdb
+C:\Users\jines\Desktop\DemoApplication\Blogster\Blogster\obj\Debug\netcoreapp2.0\Blogster.dll
+C:\Users\jines\Desktop\DemoApplication\Blogster\Blogster\obj\Debug\netcoreapp2.0\Blogster.pdb

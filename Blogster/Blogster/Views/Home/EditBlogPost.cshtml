@@ -1,0 +1,25 @@
+﻿@using Microsoft.AspNetCore.Http;
+@model Blogster.Models.BlogPosts
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Edit a blog";
+}
+
+
+<div class="container" role="main">
+    &nbsp;
+    <form asp-controller="Home" asp-action="UpdateBlogPost" asp-route-UserId="@Context.Session.GetInt32("UserId")" asp-route-BlogPostId="@Model.BlogPostID" method="post">
+        <div class="form-group">
+            <label for="Title">Title</label>
+            <input type="text" class="form-control" id="Title" name="Title" maxlengthx="200" value="@Model.Title" required>
+        </div>
+
+
+        <div class="form-group">
+            <label for="Content">Content</label>
+            <textarea class="form-control" id="Content" name="Content" rows="10" minlength="100" maxlength="4000"  required>@Model.Content</textarea>
+        </div>
+
+        <button class="btn btn-outline-danger btn-sm" type="submit">Edit Blog</button>
+    </form>
+</div>

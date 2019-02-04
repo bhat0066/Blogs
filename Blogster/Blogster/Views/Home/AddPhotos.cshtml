@@ -1,0 +1,49 @@
+﻿@using Microsoft.AspNetCore.Http;
+@model IEnumerable<Blogster.Models.Photos>
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Add Photos";
+}
+
+<div class="container">
+    <form asp-controller="Home" asp-action="UploadFileNow" asp-route-BlogPostId="@Context.Session.GetString("BlogPostId")" enctype="multipart/form-data">
+        <div class="input-group">
+            <div class="custom-file">
+                <input type="file" name="files" class="custom-file-input" id="inputGroupFile04" onchange="$(this).next().after().text($(this).val().split('\\').slice(-1)[0])" multiple />
+                <label class="custom-file-label" for="inputGroupFile04"></label>
+            </div>
+
+            <div class="input-group-append">
+                <button class="btn  btn-outline-primary" type="submit" name="upload">Upload Now</button>
+            </div>
+        </div>
+    </form>
+
+    <h2>Currently Uploaded</h2>
+    @if (Model.Count() == 0)
+    {
+        <p>There are no files to display.</p>
+    }
+    else
+    {
+        <table>
+            @foreach (var photo in Model)
+            {
+                <tr>
+                    <td>
+                        <a class="btn btn-outline-danger btn-sm" onclick="return confirm('Are you sure?');" asp-controller="Home" asp-action="DeleteFileNow" asp-route-fileName="@photo.Filename"  asp-route-BlogPostId="@photo.BlogPostId" role="button">Delete</a>
+                    </td>
+                    <td>
+                        <img src="@photo.Url" />
+                        <br>
+                        <br>
+                        @photo.Filename
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"> <hr /></td>
+                </tr>
+            }
+        </table>
+    }
+</div>

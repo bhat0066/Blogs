@@ -1,0 +1,29 @@
+﻿@{
+    Layout = "_SignInOut";
+    ViewData["Title"] = "Login";
+}
+
+<form class="form-signin" asp-controller="Home" asp-action="VerifyUser" method="post">
+    <div class="text-center mb-4">
+        <a href='@Url.Action("Index", "Home")'>
+            <img src='@Url.Content("~/icons/icons8-blog-512.png")' alt="" width="72" height="72" />
+        </a>
+        <h1 class="h3 mb-3 font-weight-normal">Sign in</h1>
+    </div>
+    <div class="form-label-group">
+        <input type="email" name="EmailAddress" class="form-control" placeholder="email address" minlength="5" maxlength="50" required autofocus>
+        <label for="EmailAddress">Email address</label>
+    </div>
+    <div class="form-label-group">
+        <input type="password" name="Password" class="form-control" placeholder="password" minlength="5" maxlength="50" required>
+        <label for="Password">Password</label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    <p class="mt-5 mb-3 text-muted text-center">
+        Don't have an account?
+        @Html.ActionLink("Sign up", "Register", "Home", new { area = "" }, new { @class = "" })
+        <br />
+        @Html.ActionLink("Go Home", "Index", "Home", new { area = "" }, new { @class = "" })
+    </p>
+    <p class="mt-5 mb-3 text-muted text-center">&copy; Jinesh Bhatt</p>
+</form>

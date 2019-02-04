@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Blogster.Models.BadWords>
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Nasty Words";
+}
+
+<div class="container" role="main">
+    <header class="h3">List of Bad Words!</header>
+    <ul class="list-group">
+        @foreach (var items in Model)
+        {
+            <li class="list-group-item">
+                @Html.ActionLink("Delete", "DeleteBadWord", "Home", new { id = items.BadWordId })
+                @items.Word
+            </li>
+        }
+    </ul>
+    &nbsp;
+    <form asp-controller="Home" asp-action="AddBadWords" method="post">
+        <header class="h3">Add a bad word:</header>
+        <div class="form-group">
+            <input type="text" class="form-control" id="Word" name="Word" required />
+        </div>
+        <button type="submit" class="btn btn-outline-success btn-sm">Submit</button>
+    </form>
+</div>
